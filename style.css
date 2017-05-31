@@ -1,14 +1,13 @@
 .mygrid {
     width: 100%;
     display: grid;
-     grid-gap: 10px;
+     grid-gap: 0px;
     margin:10px auto;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 40px 20px 300px 300px ;
-    grid-template-areas: "header header header"
-                       "a b c"
-                        "article article article" 
-                               "d d d";
+    grid-template-columns: 300px 71px 114px ;
+    grid-template-rows: 185px 115px;
+    grid-template-areas: 
+                       "a b b "
+                       "a d c "
 }
 
 
@@ -17,11 +16,7 @@
 }
 
 .mygrid>* {
-    border: 1px solid black;
-}
-
-header {
-    grid-area:header;
+    border: 1px dashed yellow;
 }
 
 .a {
@@ -52,5 +47,5 @@ article {
 }
 
 .mygrid>* {
-    border: 2px solid black;
+    border: 1px dashed yellow;
 }
