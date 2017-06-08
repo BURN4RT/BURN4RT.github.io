@@ -1,51 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+body {
+            background:white;
+            color: black;
+            font-family: "Combo", sans-serif;
+    
+        }
+
+html,body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
 .mygrid {
     width: 100%;
+    height:53vw;
     display: grid;
-     grid-gap: 0px;
-    margin:10px auto;
-    grid-template-columns: 300px 71px 114px ;
-    grid-template-rows: 185px 115px;
+    grid-gap: 0px;
+    grid-template-columns: 20.202vw 2.962vw 1.181vw 7.676vw 67.340vw;
+    grid-template-rows: 12.457vw 1.818vw 1.144vw 4.781vw 32.659vw;
     grid-template-areas: 
-                       "a b b "
-                       "a d c "
+                       "a b b b i"
+                       "a f d c i "
+                       "a f g c i "
+                       "a e e c i"
+                       "h h h h i";
+    border-right:  4px solid black;
+    border-bottom:  4px solid black;
+                          
 }
 
 
 .mygrid:hover {
-    opacity: 0.2;
+    opacity: 1;
 }
 
 .mygrid>* {
-    border: 1px dashed yellow;
+    border-top:  4px solid black;
+    border-left:   4px solid black;
 }
 
+
+
+ 
 .a {
     grid-area: a;
+    position: relative;
+   
+}
+
+.a:after{
+  content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-right: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    -moz-border-radius: 100% 0 0 0 ;
+    border-radius: 100% 0 0 0 ;
+    
+    
+    
 }
 
 .b{
     grid-area: b;
+    position: relative;
+}
+
+
+.b:after{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    position: absolute ;
+    top: 0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    -moz-border-radius:  0 100% 0 0 ;
+    border-radius:  0 100% 0 0 ;
 }
 
 .c{
     grid-area: c;
-    
+    position: relative;
     
 }
-article {
-    grid-area: article;}
 
+.c:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-left: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    -moz-border-radius:  0  0  100% 0 ;
+    border-radius:  0  0 100% 0 ;
+}
 
 .d{
-    grid-area: d
-}
+    grid-area: d;
+    position: relative;
     
-    
-    
-.mygrid:hover {
-    opacity: 0.2;
 }
 
-.mygrid>* {
-    border: 1px dashed yellow;
+.d:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    -moz-border-radius:  0 100% 0 0 ;
+    border-radius:  0 100% 0 0 ;
 }
+
+
+.e{
+    grid-area: e;
+    position: relative;
+    
+}
+
+.e:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-right: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    -moz-border-radius:  0 0 0 100%;
+    border-radius: 0 0 0 100%;
+}
+
+
+.f{
+    grid-area: f;
+    position: relative;
+    
+}
+
+.f:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-right: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    -moz-border-radius: 100% 0 0 0 ;
+    border-radius: 100% 0 0 0 ;
+}
+
+
+.g{
+    grid-area: g;
+    position: relative;
+    
+}
+
+.h:before{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 5px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    border-right: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    -moz-border-radius:  0 0 0 100%;
+    border-radius: 0 0 0 100%;
+}
+
+
+.h{
+    grid-area: h;
+    position: relative;
+   
+
+    
+}
+
+.i{
+    grid-area: i;
+    
+}
+
+
