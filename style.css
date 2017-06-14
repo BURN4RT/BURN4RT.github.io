@@ -18,11 +18,11 @@ html,body {
 
 .mygrid {
     width: 100%;
-    height:53vw;
+    height:100%;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 20.202vw 2.962vw 1.181vw 7.676vw 67.340vw;
-    grid-template-rows: 12.457vw 1.818vw 1.144vw 4.781vw 32.659vw;
+    grid-template-columns: 38.216vh 5.605vh 3.439vh 14.522vh 1fr;
+    grid-template-rows: 23.566vh 3.439vh 2.165vh 9.044vh 1fr;
     grid-template-areas: 
                        "a b b b i"
                        "a f d c i "
@@ -231,7 +231,7 @@ html,body {
 
 .i{
     grid-area: i;
-    
+    overflow-y: scroll;
 }
 
 
