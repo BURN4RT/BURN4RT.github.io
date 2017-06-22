@@ -709,5 +709,8 @@ audio{
   max-height: 50%;
 }
 
+html>body>div.easter1>h1>a{
+    color:white;
+}
 
 
